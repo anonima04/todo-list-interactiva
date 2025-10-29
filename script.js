@@ -10,6 +10,7 @@ const taskList = document.getElementById('taskList');
 
 // ... código existente ...
 
+
 function renderTasks() {
     taskList.innerHTML = ""; // Limpiar la lista antes de volver a dibujarla
     for (const task of tasks) {
@@ -22,3 +23,15 @@ function renderTasks() {
 // Simulación: Añade esto para probar que funciona
 tasks.push("Tarea de prueba 1", "Tarea de prueba 2");
 renderTasks();
+
+function addTask() {
+    const taskText = taskInput.value.trim();
+    if (taskText !== '') {
+        tasks.push(taskText);
+        taskInput.value = '';
+        console.log(tasks); // Por ahora solo lo mostramos en consola
+    }
+}
+
+addButton.addEventListener('click', addTask);
+
