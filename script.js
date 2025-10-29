@@ -33,5 +33,8 @@ function addTask() {
     }
 }
 
+// COMENTARIO
+// COMENTARIO 2
+
 addButton.addEventListener('click', addTask);
 
