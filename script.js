@@ -7,3 +7,16 @@ const addButton = document.getElementById('addButton');
 const taskList = document.getElementById('taskList');
 
 // (Funciones a implementar por el equipo)
+
+// ... código existente ...
+
+function addTask() {
+    const taskText = taskInput.value.trim();
+    if (taskText !== '') {
+        tasks.push(taskText);
+        taskInput.value = '';
+        console.log(tasks); // Por ahora solo lo mostramos en consola
+    }
+}
+
+addButton.addEventListener('click', addTask);
