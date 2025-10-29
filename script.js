@@ -19,4 +19,6 @@ function addTask() {
     }
 }
 
+// COMENTARIO
+
 addButton.addEventListener('click', addTask);
